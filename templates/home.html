@@ -1,0 +1,18 @@
+{% load swampdragon_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Notifications</title>
+	</head>
+
+	<body onload="startup();">
+		<div>
+			<h1>Notifications</h1>
+			<ul id="notication_list"></ul>
+		</div>
+
+		{% swampdragon_settings %}
+		<script type="text/javascript" src="{{ STATIC_URL }}swampdragon/js/dist/swampdragon.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}notifications/js/notifications.js"></script>
+	</body>
+</html>
